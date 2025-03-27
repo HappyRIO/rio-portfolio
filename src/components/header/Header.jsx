@@ -14,11 +14,11 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-2xl font-bold text-gray-800 dark:text-white">John Doe</h1>
+            <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Sergio Jimenez</h1>
           </motion.div>
           <Navigation />
           <div className="flex items-center space-x-6">
-            {/* <SocialLinks /> */}
+            <SocialLinks />
             <ThemeToggle />
           </div>
         </div>
