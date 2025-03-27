@@ -18,7 +18,7 @@ const Header = () => {
           </motion.div>
           <Navigation />
           <div className="flex items-center space-x-6">
-            <SocialLinks />
+            {/* <SocialLinks /> */}
             <ThemeToggle />
           </div>
         </div>

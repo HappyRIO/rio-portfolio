@@ -1,7 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import Button from '../shared/Button';
-import SkillsGrid from './SkillsGrid';
+import React from "react";
+import { motion } from "framer-motion";
+// import Button from "../shared/Button";
+import SkillsGrid from "./SkillsGrid";
 
 const About = () => {
   return (
@@ -24,17 +24,18 @@ const AboutContent = () => (
   >
     <h2 className="text-4xl font-bold mb-6 dark:text-white">About Me</h2>
     <p className="text-gray-600 dark:text-gray-300 mb-6">
-      I'm a Full Stack Developer specializing in AI and Blockchain technologies with 
-      7+ years of experience. My expertise spans developing smart contracts, 
-      building decentralized applications, and integrating AI solutions into 
-      enterprise-level systems.
+      I'm a Full Stack Developer specializing in AI with rich experience. My
+      expertise spans building intelligent applications, developing machine
+      learning models, and integrating AI solutions into enterprise-level
+      systems.
     </p>
     <p className="text-gray-600 dark:text-gray-300 mb-8">
-      I'm passionate about pushing the boundaries of what's possible with Web3 
-      and AI technologies. Currently focused on developing innovative DeFi solutions 
-      and implementing AI-powered blockchain analytics tools.
+      I'm passionate about pushing the boundaries of AI technology, focusing on
+      NLP, computer vision, and AI-driven automation. Currently, I'm working on
+      scalable AI solutions and optimizing deep learning models for real-world
+      applications.
     </p>
-    <Button variant="primary">Download CV</Button>
+    {/* <Button variant="primary">Download CV</Button> */}
   </motion.div>
 );
 

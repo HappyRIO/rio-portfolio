@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Button = ({ children, variant = 'primary', className = '', ...props }) => {
+const Button = ({ href, children, variant = 'primary', className = '', ...props }) => {
   const baseStyles = "px-8 py-3 rounded-full text-lg font-semibold transition-colors";
   const variants = {
     primary: "bg-indigo-600 text-white hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600",
@@ -15,7 +15,9 @@ const Button = ({ children, variant = 'primary', className = '', ...props }) => 
       whileTap={{ scale: 0.95 }}
       {...props}
     >
+      <a href={href}>
       {children}
+      </a>
     </motion.button>
   );
 };

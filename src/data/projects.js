@@ -1,80 +1,82 @@
 export const projectsData = [
+  // {
+  //   title: "AI Trading Bot",
+  //   description:
+  //     "Cryptocurrency trading bot using machine learning for price prediction and automated trading",
+  //   tech: ["Python", "PyTorch", "Node.js", "MongoDB", "Binance API"],
+  //   image: "https://picsum.photos/seed/3/600/400",
+  //   featured: true,
+  // },
   {
-    title: "DeFi Lending Platform",
-    description: "Decentralized lending platform with AI-powered risk assessment and automated interest rate optimization",
-    tech: ["Solidity", "Web3.js", "React", "TensorFlow", "Ethereum"],
-    image: "https://picsum.photos/seed/1/600/400",
-    featured: true
-  },
-  {
-    title: "NFT Marketplace",
-    description: "Full-featured NFT marketplace with AI-generated artwork integration and dynamic pricing",
-    tech: ["Smart Contracts", "IPFS", "Next.js", "Python", "OpenAI"],
-    image: "https://picsum.photos/seed/2/600/400",
-    featured: true
-  },
-  {
-    title: "AI Trading Bot",
-    description: "Cryptocurrency trading bot using machine learning for price prediction and automated trading",
-    tech: ["Python", "PyTorch", "Node.js", "MongoDB", "Binance API"],
-    image: "https://picsum.photos/seed/3/600/400",
-    featured: true
-  },
-  {
-    title: "DAO Governance Platform",
-    description: "Decentralized autonomous organization platform with AI-powered proposal analysis",
-    tech: ["Solidity", "React", "GraphQL", "NLP", "Aragon"],
-    image: "https://picsum.photos/seed/4/600/400",
-    featured: true
-  },
-  {
-    title: "Blockchain Analytics Dashboard",
-    description: "Real-time blockchain analytics platform with AI-driven insights and anomaly detection",
-    tech: ["Python", "TensorFlow", "React", "Node.js", "Web3"],
+    title: "AI-Powered Customer Support Chatbot with NLP & Web Scraping",
+    description:
+      "A cutting-edge AI chatbot leveraging OpenAI for natural language processing, a vector database for efficient retrieval, and FastAPI for seamless backend interactions. Built with Python and React, it integrates BeautifulSoup for web scraping and deploys on AWS for scalability and reliability.",
+    tech: [
+      "OpenAI",
+      "Vector Database",
+      "FastAPI",
+      "Python",
+      "React",
+      "BeautifulSoup",
+      "AWS",
+    ],
     image: "https://picsum.photos/seed/5/600/400",
-    featured: true
+    featured: true,
   },
   {
-    title: "Smart Contract Auditor",
-    description: "Automated smart contract security analyzer using machine learning for vulnerability detection",
-    tech: ["Python", "Solidity", "Machine Learning", "TypeScript", "GraphQL"],
+    title: "AI Chatbot for WordPress with NLP & Dynamic Interaction",
+    description:
+      "An AI-powered chatbot for WordPress websites, utilizing OpenAI for natural language processing and Langchain for enhanced conversational flow. Built with Python and FastAPI, it integrates a vector database for efficient data retrieval, MySQL for storage, and React for a responsive frontend.",
+    tech: [
+      "OpenAI", "Langchain", "Vector Database",
+      "FastAPI",
+      "Python",
+      "React",
+      "MySQL",
+    ],
+    image: "https://picsum.photos/seed/5/600/400",
+    featured: true,
+  },
+  {
+    title: "Solana Copy Trading Bot",
+    description:
+      "Solana copy trading bot using machine learning for price prediction and automated trading",
+    tech: ["Solana API", "Telegram API", "Python", "MongoDB", "gRPC"],
     image: "https://picsum.photos/seed/6/600/400",
-    featured: true
+    featured: true,
   },
   {
-    title: "Decentralized Identity System",
-    description: "Self-sovereign identity solution using zero-knowledge proofs and blockchain verification",
-    tech: ["ZK-SNARKs", "Ethereum", "React Native", "Node.js", "IPFS"],
-    image: "https://picsum.photos/seed/7/600/400"
+    title: "Responsive Website Clone with React & MUI",
+    description:
+      "A fully responsive website clone built with React for dynamic UI, MUI for component libraries, and TailwindCSS for modern, utility-first styling.",
+    tech: ["React", "MUI", "TailwindCSS"],
+    image: "https://picsum.photos/seed/7/600/400",
+    featured: true,
   },
   {
-    title: "Cross-chain Bridge",
-    description: "Secure cross-chain bridge with AI-powered security monitoring and automated fund management",
-    tech: ["Solidity", "Cosmos SDK", "Rust", "Python", "TensorFlow"],
-    image: "https://picsum.photos/seed/8/600/400"
+    title: "NWS Telegram Mini App",
+    description:
+      "A Telegram mini app for the Nodewaves token airdrop, built with Next.js and Node.js for fast performance, integrated with Telegram for user interaction, MySQL for data management, and deployed on AWS for scalability and reliability.",
+    tech: ["Next", "Node.js", "Telegram", "MySQL", "AWS"],
+    image: "https://nodewaves.com/blogs/uploads/post_image/24110350363857.webp",
+    featured: true,
   },
   {
-    title: "AI-Powered DEX Aggregator",
-    description: "Smart order routing across DEXs using ML for optimal trade execution and minimal slippage",
-    tech: ["Python", "Web3.py", "React", "FastAPI", "PostgreSQL"],
-    image: "https://picsum.photos/seed/9/600/400"
+    title: "TIGA Spin Mini App",
+    description:
+      "TIGA Spin is a simple, exciting game where players spin the reels to earn Kudos — your key to unlocking rewards. The more Kudos you collect, the bigger your percentage of the $1 million USD prize pool. More Kudos = More money!",
+    tech: ["React", "Node.js", "Docker", "Redis", "PostgreSQL", "Telegram"],
+    image:
+      "https://miro.medium.com/v2/resize:fit:640/format:webp/0*gmhCq95DDfUmzEuA",
+    featured: true,
   },
   {
-    title: "Metaverse Platform",
-    description: "Virtual world with AI-driven NPCs and blockchain-based asset ownership",
-    tech: ["Unity", "Solidity", "Python", "WebGL", "TensorFlow.js"],
-    image: "https://picsum.photos/seed/10/600/400"
+    title: "Sport Betting Prediction Platform",
+    description:
+      "​Tipster Total is a leading sports prediction platform dedicated to connecting sports enthusiasts with the most talented and accurate analysts. Its mission is to provide users with precise forecasts and detailed analyses to make informed decisions and maximize their betting profits.​",
+    tech: ["Next", "TailwindCSS", "Node.js", "MySQL", "OpenAI API"],
+    image:
+      "https://tipstertotal.com/soccer-player-keeping-ball-2022-03-04-01-46-42-utc-min.jpg",
+    featured: true,
   },
-  {
-    title: "Privacy-Preserving ML Platform",
-    description: "Federated learning platform for training AI models on encrypted blockchain data",
-    tech: ["PyTorch", "Homomorphic Encryption", "Rust", "TypeScript", "gRPC"],
-    image: "https://picsum.photos/seed/11/600/400"
-  },
-  {
-    title: "Quantum-Resistant Blockchain",
-    description: "Post-quantum cryptographic blockchain with AI-optimized consensus mechanism",
-    tech: ["Rust", "Post-Quantum Crypto", "Python", "C++", "WASM"],
-    image: "https://picsum.photos/seed/12/600/400"
-  }
 ];
