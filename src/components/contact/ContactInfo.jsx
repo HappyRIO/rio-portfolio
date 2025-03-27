@@ -1,13 +1,15 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
+// import { motion } from 'framer-motion';
+import { FaEnvelope, FaMapMarkerAlt, FaTelegram, FaSkype, FaWhatsapp } from 'react-icons/fa';
 import ContactInfoItem from './ContactInfoItem';
 
 const ContactInfo = () => {
   const contactDetails = [
-    { icon: <FaEnvelope />, title: "Email", content: "hello@example.com" },
-    { icon: <FaPhone />, title: "Phone", content: "+1 (555) 123-4567" },
-    { icon: <FaMapMarkerAlt />, title: "Location", content: "San Francisco, CA" }
+    { icon: <FaEnvelope />, title: "Email", content: "sergioj1013@gmail.com" },
+    { icon: <FaWhatsapp />, title: "Whatsapp", content: "+34 631 64 57 92" },
+    { icon: <FaTelegram />, title: "Telegram", content: "@Bead1215" },
+    { icon: <FaSkype />, title: "Skype", content: "live:.cid.f2c12afab1665a2" },
+    { icon: <FaMapMarkerAlt />, title: "Location", content: "Villagonzalo-Pedernales, Spain" }
   ];
 
   return (
