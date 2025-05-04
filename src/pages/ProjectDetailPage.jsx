@@ -1,9 +1,9 @@
-import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { projectsData } from '../data/projects';
-import Button from '../components/shared/Button';
-import TechTag from '../components/projects/TechTag';
+import React from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { projectsData } from "../data/projects";
+import Button from "../components/shared/Button";
+import TechTag from "../components/projects/TechTag";
 
 const ProjectDetailPage = () => {
   const { id } = useParams();
@@ -14,8 +14,10 @@ const ProjectDetailPage = () => {
     return (
       <div className="min-h-screen flex items-center justify-center dark:bg-gray-900">
         <div className="text-center">
-          <h2 className="text-2xl font-bold mb-4 dark:text-white">Project not found</h2>
-          <Button onClick={() => navigate('/')}>Back to Home</Button>
+          <h2 className="text-2xl font-bold mb-4 dark:text-white">
+            Project not found
+          </h2>
+          <Button onClick={() => navigate("/")}>Back to Home</Button>
         </div>
       </div>
     );
@@ -32,7 +34,7 @@ const ProjectDetailPage = () => {
           <Button
             variant="secondary"
             className="mb-8"
-            onClick={() => navigate('/')}
+            onClick={() => navigate(-1)}
           >
             ← Back to Projects
           </Button>
@@ -47,11 +49,17 @@ const ProjectDetailPage = () => {
             </div>
 
             <div>
-              <h1 className="text-4xl font-bold mb-4 dark:text-white">{project.title}</h1>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">{project.description}</p>
+              <h1 className="text-4xl font-bold mb-4 dark:text-white">
+                {project.title}
+              </h1>
+              <p className="text-gray-600 dark:text-gray-300 mb-6">
+                {project.description}
+              </p>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-4 dark:text-white">Technologies Used</h2>
+                <h2 className="text-2xl font-bold mb-4 dark:text-white">
+                  Technologies Used
+                </h2>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech, index) => (
                     <TechTag key={index} tech={tech} />
@@ -60,18 +68,27 @@ const ProjectDetailPage = () => {
               </div>
 
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-4 dark:text-white">Key Features</h2>
+                <h2 className="text-2xl font-bold mb-4 dark:text-white">
+                  Key Features
+                </h2>
                 <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
-                  <li>Feature 1 description</li>
-                  <li>Feature 2 description</li>
-                  <li>Feature 3 description</li>
-                  <li>Feature 4 description</li>
+                  {project.features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
+                  ))}
                 </ul>
               </div>
 
               <div className="space-x-4">
-                <Button>View Live Demo</Button>
-                <Button variant="secondary">View Source Code</Button>
+                {project.demoLink && <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button>View Live Demo</Button>
+                </a>}
+                {project.githubLink && <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                  <Button variant="secondary">View Source Code</Button>
+                </a>}
               </div>
             </div>
           </div>

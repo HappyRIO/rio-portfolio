@@ -1,6 +1,6 @@
 import React from 'react';
-// import { motion } from 'framer-motion';
 import { FaEnvelope, FaMapMarkerAlt, FaTelegram, FaSkype, FaWhatsapp } from 'react-icons/fa';
+import { SiMicrosoftteams } from 'react-icons/si';
 import ContactInfoItem from './ContactInfoItem';
 
 const ContactInfo = () => {
@@ -8,7 +8,7 @@ const ContactInfo = () => {
     { icon: <FaEnvelope />, title: "Email", content: "sergioj1013@gmail.com" },
     { icon: <FaWhatsapp />, title: "Whatsapp", content: "+34 631 64 57 92" },
     { icon: <FaTelegram />, title: "Telegram", content: "@Bead1215" },
-    { icon: <FaSkype />, title: "Skype", content: "live:.cid.f2c12afab1665a2" },
+    { icon: <SiMicrosoftteams />, title: "Teams", content: "sergioj1013@gmail.com" },
     { icon: <FaMapMarkerAlt />, title: "Location", content: "Villagonzalo-Pedernales, Spain" }
   ];
 

@@ -4,9 +4,9 @@ import SocialIcon from './SocialIcon';
 
 const SocialLinks = () => {
   const socialLinks = [
-    { href: "https://github.com", icon: <FaGithub /> },
-    { href: "https://linkedin.com", icon: <FaLinkedin /> },
-    { href: "https://twitter.com", icon: <FaTwitter /> }
+    { href: "https://github.com/HappyRIO", icon: <FaGithub /> },
+    // { href: "https://linkedin.com", icon: <FaLinkedin /> },
+    // { href: "https://twitter.com", icon: <FaTwitter /> }
   ];
 
   return (
